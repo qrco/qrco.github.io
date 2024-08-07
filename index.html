@@ -1,1 +1,188 @@
-<body></body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The QR Code Company - Free Dynamic QR Codes with Tracking</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.5/build/spline-viewer.js"></script>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #4CAF50;
+            --text-color: #333;
+            --background-color: #f5f5f7;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        .nav-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        header {
+            background: linear-gradient(135deg, #4a90e2, #81d4fa);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 15px;
+            max-width: 600px;
+        }
+        .spline-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        spline-viewer {
+            width: 100%;
+            height: 100%;
+        }
+        main {
+            margin-top: 4rem;
+        }
+        h1, h2 {
+            color: var(--primary-color);
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #45a049;
+        }
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 4rem;
+            gap: 2rem;
+        }
+        .feature {
+            flex-basis: 30%;
+            text-align: center;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .feature i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .about-us {
+            margin-top: 4rem;
+            background-color: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="/api/placeholder/150/50" alt="The QR Code Company Logo" />
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <header id="home">
+        <div class="spline-container">
+            <spline-viewer url="https://prod.spline.design/45kTDXemGNlEeseh/scene.splinecode"></spline-viewer>
+        </div>
+        <div class="hero-content">
+            <h1>The QR Code Company</h1>
+            <p>Free Dynamic QR Codes with Tracking and Analytics</p>
+            <a href="#" class="cta-button">Create QR Code</a>
+        </div>
+    </header>
+    <main class="container">
+        <section id="features" class="features">
+            <div class="feature">
+                <i class="fas fa-sync-alt"></i>
+                <h3>Dynamic Content</h3>
+                <p>Change your QR code content anytime, even after printing</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-chart-line"></i>
+                <h3>Advanced Tracking</h3>
+                <p>Monitor scans and engagement with detailed analytics</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-gift"></i>
+                <h3>100% Free</h3>
+                <p>No hidden fees or subscriptions required</p>
+            </div>
+        </section>
+        <section id="about" class="about-us">
+            <h2>About Us</h2>
+            <p>The QR Code Company is dedicated to providing cutting-edge QR code solutions for businesses and individuals. Our mission is to make dynamic QR codes accessible to everyone, completely free of charge.</p>
+            <p>With our innovative technology, you can create QR codes that link to content you can update at any time, even after the code has been printed or distributed. This flexibility, combined with our robust tracking and analytics features, makes our QR codes perfect for marketing campaigns, business cards, product packaging, and more.</p>
+        </section>
+    </main>
+</body>
+</html>
