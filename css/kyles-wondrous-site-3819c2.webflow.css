@@ -1,0 +1,301 @@
+:root {
+  --black: black;
+  --blue: #69d8ff;
+  --purple: #b678ff;
+  --white: white;
+}
+
+.w-layout-blockcontainer {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@media screen and (max-width: 991px) {
+  .w-layout-blockcontainer {
+    max-width: 728px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .w-layout-blockcontainer {
+    max-width: none;
+  }
+}
+
+body {
+  color: #333;
+  font-family: Zetafonts Aristotelica Display, sans-serif;
+  font-weight: 600;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+}
+
+.spline-scene {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0%;
+}
+
+.container-2 {
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin-top: -261px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+}
+
+.div-block {
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  display: flex;
+}
+
+.heading {
+  color: var(--black);
+  font-family: Montserrat, sans-serif;
+  font-size: 105px;
+  font-weight: 600;
+  line-height: 1em;
+}
+
+.heading-2 {
+  margin-top: 10px;
+  padding-top: 0;
+  padding-bottom: 20px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  line-height: 1em;
+}
+
+.button {
+  background-color: var(--blue);
+  background-image: linear-gradient(79deg, var(--blue), var(--purple));
+  border-radius: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1em;
+}
+
+.section {
+  height: 100vh;
+}
+
+.navbar {
+  z-index: 99;
+  opacity: 1;
+  background-color: #fff0;
+  border-radius: 0;
+}
+
+.nav-link {
+  background-color: #fff;
+  background-image: linear-gradient(9deg, var(--purple), var(--blue));
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  justify-content: center;
+  align-items: center;
+  padding-top: 36px;
+  font-size: 28px;
+  line-height: 0;
+  text-decoration: none;
+  display: flex;
+}
+
+.nav-link-2, .nav-link-3 {
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+.nav-menu {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.div-block-3 {
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: absolute;
+}
+
+.lottie-animation {
+  z-index: 100;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  inset: 0%;
+}
+
+.brand {
+  background-image: url('../images/logo.png');
+  background-position: 50%;
+  background-size: cover;
+  width: 56px;
+  height: 56px;
+}
+
+.button-2 {
+  z-index: 101;
+  background-color: var(--black);
+  color: #fff;
+  border-radius: 12px;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  font-family: Montserrat, sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 1em;
+  position: absolute;
+  inset: auto 0% 0% auto;
+}
+
+.container-3 {
+  max-width: 1400px;
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    flex-flow: column;
+    max-width: none;
+  }
+
+  .spline-scene {
+    margin: 29% 0% 0% -19%;
+    padding-left: 0%;
+    padding-right: 0%;
+    overflow: hidden;
+  }
+
+  .container-2 {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .div-block {
+    flex-flow: column;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .navbar {
+    background-color: #fff;
+    position: fixed;
+    inset: 0% 0% auto;
+  }
+
+  .nav-link {
+    background-image: none;
+  }
+
+  .nav-menu {
+    background-image: linear-gradient(180deg, var(--purple), var(--blue));
+  }
+
+  .icon {
+    color: #000;
+  }
+
+  .div-block-2 {
+    height: 50vh;
+  }
+
+  .div-block-3 {
+    height: 100svh;
+    display: none;
+    inset: 0%;
+  }
+
+  .lottie-animation {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .menu-button, .menu-button.w--open {
+    background-color: var(--white);
+  }
+
+  .brand {
+    margin-left: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    overflow: hidden;
+  }
+
+  .spline-scene {
+    height: 50%;
+    margin-top: 36.1svh;
+    overflow: clip;
+  }
+
+  .heading {
+    max-width: 422px;
+    font-size: 68px;
+  }
+
+  .brand {
+    margin-left: 18px;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .spline-scene {
+    height: 100%;
+    margin-top: 5svh;
+    overflow: hidden;
+  }
+
+  .heading {
+    max-width: 225px;
+    font-size: 33px;
+  }
+
+  .brand {
+    margin-left: 12px;
+  }
+}
+
+
+@font-face {
+  font-family: 'Zetafonts Aristotelica Display';
+  src: url('../fonts/Zetafonts---Aristotelica-Display-Demibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Zetafonts Aristotelica Display';
+  src: url('../fonts/Zetafonts---Aristotelica-Display-Extralight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
