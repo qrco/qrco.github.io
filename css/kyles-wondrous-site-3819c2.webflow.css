@@ -94,6 +94,7 @@ body {
 }
 
 .section {
+  background-color: #f4f6f9;
   height: 100vh;
 }
 
@@ -131,12 +132,12 @@ body {
   display: flex;
 }
 
-.div-block-3 {
+.loader {
   z-index: 100;
   width: 100vw;
   height: 100vh;
   display: none;
-  position: absolute;
+  position: fixed;
 }
 
 .lottie-animation {
@@ -175,6 +176,20 @@ body {
   max-width: 1400px;
 }
 
+.code-embed {
+  margin-top: -20%;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+}
+
+.go-to-create {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  position: absolute;
+  inset: 50% 0% 0%;
+}
+
 @media screen and (max-width: 991px) {
   .container {
     flex-flow: column;
@@ -210,11 +225,25 @@ body {
   }
 
   .nav-link {
+    -webkit-text-fill-color: inherit;
+    background-color: #fff0;
     background-image: none;
+    background-clip: border-box;
+  }
+
+  .nav-link.bottom {
+    margin-bottom: 36px;
   }
 
   .nav-menu {
-    background-image: linear-gradient(180deg, var(--purple), var(--blue));
+    -webkit-backdrop-filter: blur(75px);
+    backdrop-filter: blur(75px);
+    background-color: #bbbbbb38;
+    background-image: linear-gradient(#fff, #69d8ff08);
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
   }
 
   .icon {
@@ -225,7 +254,7 @@ body {
     height: 50vh;
   }
 
-  .div-block-3 {
+  .loader {
     height: 100svh;
     display: none;
     inset: 0%;
@@ -270,7 +299,7 @@ body {
 @media screen and (max-width: 479px) {
   .spline-scene {
     height: 100%;
-    margin-top: 5svh;
+    margin-top: 19svh;
     overflow: hidden;
   }
 
